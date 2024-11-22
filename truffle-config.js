@@ -82,7 +82,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // Note: It's important to wrap the provider as a function to ensure truffle uses a new provider every time.
     sepolia: {
-      provider: () => new HDWalletProvider("d87b20f912c352330d7097a5df9737ea359b3f9e945df8fdad494a77e1debad0", `https://sepolia.infura.io/v3/dcba843907ca4e4584a3a81539c68197`),
+      provider: () => new HDWalletProvider("private key", `api key of sepolia`),
       network_id: 11155111,       // Goerli's id
       confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
